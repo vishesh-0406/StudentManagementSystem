@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <h3>Event Registration Form</h3>
+
+    <form name="f" onsubmit="return validate()">
+
+        Full Name:
+        <input type="text" name="name">
+        <br><br>
+
+        Email:
+        <input type="text" name="email">
+        <br><br>
+
+        Phone Number:
+        <input type="text" name="phone">
+        <br><br>
+
+        Gender:
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <br><br>
+
+        College Name:
+        <textarea name="college"></textarea>
+        <br><br>
+
+        Department:
+        <textarea name="department"></textarea>
+        <br><br>
+
+        Year of Study:
+        <input type="radio" name="year" value="1st Year"> 1st Year
+        <input type="radio" name="year" value="2nd Year"> 2nd Year
+        <input type="radio" name="year" value="3rd Year"> 3rd Year
+        <input type="radio" name="year" value="4th Year"> 4th Year
+        <br><br>
+
+        Event Selection:
+        <select name="event">
+            <option value="">Select Event</option>
+            <option value="Hackathon">Hackathon</option>
+            <option value="Workshop">Workshop</option>
+            <option value="Technical Quiz">Technical Quiz</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <p id= "result"></p>
+
+</body>
+</html>
